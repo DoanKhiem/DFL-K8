@@ -1,0 +1,15 @@
+
+Nhân viên: Mã nhân viên, Họ và tên, Giới tính, SĐT, email, địa chỉ
+
+Issue: Mã issue, Trạng thái(New, Doing, Resolve, Done, Closed, Pending), 
+	Phân loại(task, bug, features), 
+	Độ ưu tiên, 
+	Người thực hiện (Assignee)
+	Thời gian dự tính, Thời gian bắt đầu, Thời gian kết thúc,
+	Mã nhân viên, Mã dự án
+
+Tài liệu: Mã tài liệu, Loại, Tiêu đề, Mô tả, File đính kèm, Ngày tạo, Mã dự án
+
+Báo cáo: Mã tiêu đề, Tiêu đề, Mô tả, File đình kèm, Ngày gửi, Người gửi, Mã dự án
+
+Dự án: Mã dự án, Tên dự án, Thời gian thực hiện
