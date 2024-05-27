@@ -1,0 +1,47 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color:aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menu ul li {
+    margin: 0 10px;
+}
+.logo img {
+    width: 150px;
+}
+.portofolio {
+    text-align: center;
+}
+.menu2 ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+.menu2 ul li {
+    margin: 0 10px;
+}
+.menu2 {
+    margin-top: 50px;
+}
+.blogs {
+    display: flex;
+    flex-wrap:wrap;
+}
+.blogs .blog {
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+    background-color: burlywood;
+}
