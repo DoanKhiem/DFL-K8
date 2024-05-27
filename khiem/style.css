@@ -1,0 +1,22 @@
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menus ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.menus ul li {
+    margin: 0 10px;
+}
+
+.logo img {
+    width: 150px;
+}
