@@ -71,3 +71,16 @@ header {
     padding: 10px 20px;
     border: none;
 }
+
+.list-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.list-cate {
+    margin: 40px 20px 0 20px;
+}
