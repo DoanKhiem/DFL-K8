@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.styles_wrapper__7sLgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e8ffc0;
+    box-shadow: 0 10px 10px -10px rgba(33, 35, 38, .1);
+    overflow: hidden;
+    z-index: 999;
+}
+
+.styles_header___jMkk {
+    max-width: 1176px;
+    width: 1176px;
+    padding-inline: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.styles_header___jMkk .styles_logo__V2vCC {
+    width: 80px;
+    align-self: center;
+}
+
+.styles_header___jMkk .styles_navbar__Y32K4 {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.styles_header___jMkk .styles_navbar__Y32K4 a:hover:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 20px;
+    background-color: #70a62c;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+.styles_header___jMkk .styles_navbar__Y32K4 .styles_active__QNRGA:before {
+    position: absolute;
+    content: "";
+    height: 3px;
+    width: 20px;
+    background-color: #70a62c;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0 auto;
+}
+
+
+.styles_header___jMkk .styles_navbar__Y32K4 .styles_active__QNRGA {
+    color: #70a62c !important;
+}
+
+.styles_header___jMkk .styles_navbar__Y32K4 a:hover {
+    color: #70a62c;
+}
+
+.styles_header___jMkk .styles_navbar__Y32K4 a {
+    color: #595959;
+    padding-inline: 16px;
+    padding-block: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button */
+
+.xl-mr-3 {
+    margin-right: 12px !important;
+}
+
+.gap-4 {
+    gap: 8px !important;
+}
+
+.items-center {
+    align-items: center !important;
+}
+
+.flex {
+    display: flex !important;
+}
+
+:where(.css-1fhpcjb).ant-btn.ant-btn-lg {
+    font-size: 16px;
+    height: 40px;
+    padding: 6.428571428571429px 15px;
+    border-radius: 8px;
+}
+
+.styles_header___jMkk .styles_loginButton__Syzg6 {
+    font-size: 16px !important;
+    color: #70a62c;
+}
+
+:where(.css-1fhpcjb).ant-btn {
+    font-size: 16px;
+    height: 32px;
+    padding: 4px 15px;
+    border-radius: 6px;
+}
+
+:where(.css-1fhpcjb).ant-btn {
+    outline: none;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    white-space: nowrap;
+    text-align: center;
+    background-image: none;
+    background: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.645, 0.045, 0.355, 1);
+    user-select: none;
+    touch-action: manipulation;
+    line-height: 1.5714285714285714;
+    color: #717171;
+}
+
+:where(.css-1fhpcjb)[class^="ant-btn"], :where(.css-1fhpcjb)[class*=" ant-btn"] {
+    font-family: '__Lexend_Deca_1671c8', '__Lexend_Deca_Fallback_1671c8';
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+:where(.css-1fhpcjb).ant-btn-text:not(:disabled):not(.ant-btn-disabled):hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.styles_header___jMkk .styles_loginButton__Syzg6:hover {
+    color: #70a62c !important;
+}
+
+
+.styles_header___jMkk .styles_registerButton__kvlA8 {
+    font-size: 16px !important;
+}
+
+:where(.css-1fhpcjb).ant-btn-primary {
+    color: #fff;
+    background: #70a62c;
+    box-shadow: none;
+}
+
+.ant-btn:hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+.css-1fhpcjb:hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+.ant-btn-primary:hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+.ant-btn-lg:hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+.styles_registerButton__kvlA8:hover {
+    color: #717171;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+span {
+    font-size: 16px;
+    position: relative;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
