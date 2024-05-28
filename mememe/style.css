@@ -45,3 +45,49 @@ header {
     line-height: 100px;
     background-color: burlywood;
 }
+.Tay1 {
+    text-align: center;
+    margin: 20px;
+    width: 96%;
+    height: 500px;
+    line-height: 450px;
+    background-color: darksalmon;
+    display: grid;
+    flex-wrap: wrap;
+    color: darkslategrey;
+    align-items: center;
+    font-size: 25px;
+
+}
+.nut {
+    margin: 20px;
+    display:flex;
+
+}
+.pic  {
+    display:grid;
+    margin: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+}
+.lyrics {
+    display: flex;
+    flex-wrap:wrap;
+}
+.lyrics .lyric {
+    text-align: center;
+    margin: 20px;
+    width: 30%;
+    height: 100px;
+    line-height: 100px;
+    background-color: burlywood;
+}
+.heading {
+    margin: 20px;
+    color: darkslateblue;
+}
+.des3 {
+    margin: 20px;
+    color:lightslategrey
+}
