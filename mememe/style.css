@@ -44,6 +44,7 @@ header {
     height: 100px;
     line-height: 100px;
     background-color: burlywood;
+    font-size: 20px;
 }
 .Tay1 {
     text-align: center;
@@ -90,4 +91,11 @@ header {
 .des3 {
     margin: 20px;
     color:lightslategrey
+}
+.menu2 {
+    font-size: 20px;
+    color: blue 
+}
+.menu {
+    font-size: 20px;
 }
