@@ -35,6 +35,7 @@ header {
 
 .buttons button {
     background-color:lightsalmon;
+    margin: 2px;
 }
 .bt {
     background-color: yellowgreen;
@@ -65,4 +66,29 @@ header {
     width: 30%;
     line-height: 100px;
 
+}
+.hd1{
+    background-color:lightpink;
+    font-weight: bolder;
+}
+.hd ul{
+    border-color: blue;
+    background-color:lightblue;
+    font-weight: bolder;
+}
+.h2{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+   color: rgb(153, 0, 255);
+}
+.loiich{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    color: blue;
+}
+.more button{
+    
+    background-color: orange;
 }
