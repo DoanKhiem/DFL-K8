@@ -1,0 +1,128 @@
+.bname p {
+    font: menu;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+
+}
+a {
+    color: black;
+    font: menu;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.menus ul li {
+    display: flex;
+    margin: 20px 10px;
+}
+
+.menus ul {
+    margin: 0 40px 0 0;
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.main .tables .block div{
+    background-color: rgb(171, 221, 121);
+    width: 30%;
+    height: 200px;
+    float: left;
+    margin: 13px 21px;
+}
+.main .tables .block{
+    display: flex;
+    justify-content: center;
+}
+
+.main .tables .block div p{
+    text-align: center;
+    margin: 90px;
+}
+
+.main .learnmore{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.main .learnmore h1{
+    font: menu;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+
+}
+
+.main .learnmore .banner{
+    background-color: rgb(171, 221, 121);
+    width: 96.5%;
+    height: 400px;
+    float: left;
+    margin: 13px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.main .learnmore .banner a{
+    font: menu;
+    font-size: 40px;
+    font-weight: normal;
+    color: aliceblue;
+}
+
+ h2{
+    font: menu;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 30px;
+}
+
+h5{
+    font: menu;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 30px;
+}
+ 
+.main .learnmore button{
+    background-color: rgb(171, 221, 121);
+    border: none;  
+    padding: 15px 32px;  
+    text-align: center;  
+    text-decoration: none;  
+    display: inline-block;  
+    font-size: 16px;  
+    margin: 4px 30px;  
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.main .learnmore button a{
+    font: menu;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;  
+
+}
+
+.temp{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.temp div{
+    width: 30%;
+    height: 50px;
+    float: left;
+    margin: 13px 21px;
+}
+.temp div p{
+    font: menu;
+    font-size: 20px;
+    font-weight: normal;
+    margin-left: 30px;
+}

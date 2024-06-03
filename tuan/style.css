@@ -1,0 +1,94 @@
+a {
+    text-decoration: none;
+}
+
+header {
+
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menus ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+
+}
+
+.menus ul li {
+
+    margin: 0px 20px;
+
+}
+
+.logo img {
+    width: 150px;
+}
+
+.buttons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.buttons button {
+    background-color:lightsalmon;
+    margin: 2px;
+}
+.bt {
+    background-color: yellowgreen;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu1 ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+.menu1 ul li{
+    margin: 0 10px;
+}
+
+.to {
+    
+    display: flex;
+    flex-wrap: wrap;
+}
+.to .nho {
+    text-align: center;
+    background-color:lemonchiffon;
+    height: 100px;
+    margin: 20px;
+    width: 30%;
+    line-height: 100px;
+
+}
+.hd1{
+    background-color:lightpink;
+    font-weight: bolder;
+}
+.hd ul{
+    border-color: blue;
+    background-color:lightblue;
+    font-weight: bolder;
+}
+.h2{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+   color: rgb(153, 0, 255);
+}
+.loiich{
+    list-style: none;
+    display: flex;
+    justify-content: left;
+    color: blue;
+}
+.more button{
+    
+    background-color: orange;
+}

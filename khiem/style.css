@@ -1,50 +1,86 @@
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-    background-color: beige;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background-color: beige;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .menus ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-between;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
 }
 .menus ul li {
-    margin: 0 10px;
+  margin: 0 10px;
 }
 
 .logo img {
-    width: 150px;
+  width: 150px;
 }
 
 .title {
-    text-align: center;
-    text-transform: uppercase;
+  text-align: center;
+  text-transform: uppercase;
 }
 .categories ul {
-    list-style: none;
-    display: flex;
-    justify-content: center;
+  list-style: none;
+  display: flex;
+  justify-content: center;
 }
 .categories {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 .categories ul li {
-    margin: 0 30px;
+  margin: 0 30px;
 }
 .blogs {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 .blogs .blog {
-    text-align: center;
-    margin: 20px;
-    width: 30%;
-    height: 100px;
-    line-height: 100px;
-    background-color: brown;
+  text-align: center;
+  margin: 20px;
+  width: 30%;
+  height: 100px;
+  line-height: 100px;
+  background-color: brown;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+}
+.card {
+  margin: 0 20px;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-text {
+    color: #8d8d8d;
+}
+
+.card .card-button {
+    background-color: #5555ff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+}
+
+.list-item ul {
+  list-style: none;
+  padding: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+}
+.list-cate {
+    margin: 40px 20px 0 20px;
 }

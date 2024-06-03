@@ -1,0 +1,233 @@
+body {
+    background-image: url('bornpink.jpeg');
+    background-size: cover; 
+    background-position: center;
+    image-rendering: optimizeQuality;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    background-color: black;
+    color: rgb(246, 164, 178);
+    display: flex;
+    width: 1470px;
+    height: 80px;
+    padding-inline: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none; /* Bỏ dấu chấm đầu dòng */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Để các mục trong cùng một hàng */
+}
+
+.menu li {
+    margin-right: 20px; /* Khoảng cách giữa các mục */
+}
+
+.menu li:last-child {
+    margin-right: 0; /* Bỏ khoảng cách sau mục cuối cùng */
+}
+
+.menu a {
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    color: pink; /* Màu chữ, có thể thay đổi tùy thích */
+    display: inline-block; /* Để liên kết có thể có kích thước cụ thể */
+    background-color: pink; /* Màu nền của nút */
+    color: black; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    padding: 5px 10px; /* Kích thước của nút bấm */
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+    border: none; /* Bỏ viền của nút */
+    border-radius: 5px; /* Bo tròn góc của nút */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột vào nút */
+    text-align: center; /* Căn giữa chữ trong nút */
+}
+
+.menu a:hover {
+    text-decoration: none; /* Hiệu ứng khi di chuột vào */
+    background-color: #ff99cc;
+}
+
+.buttons button {
+    background-color: pink; /* Màu nền của nút */
+    color: black; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ, bạn có thể điều chỉnh theo ý muốn */
+    padding: 10px 20px; /* Kích thước của nút bấm */
+    border: 10px; /* Bỏ viền của nút */
+    border-radius: 5px; /* Bo tròn góc của nút, tùy chỉnh theo ý muốn */
+    cursor: pointer; /* Thay đổi con trỏ chuột khi di chuột vào nút */
+    font-family: 'Time new Roman';
+}
+
+.buttons button:hover {
+    background-color: #ff99cc; /* Màu nền khi di chuột vào nút */
+}
+
+.portfolio-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Đảm bảo div cha có chiều rộng 100% */
+    margin: 20px 0; /* Khoảng cách phía trên và dưới, tùy chọn */
+}
+
+/* #menu_por */
+.menu_port {
+    list-style-type: none; 
+    /* padding: 0; */
+    margin: 10px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1070px;
+    height: 20px;
+    /* padding-inline: 10px; */
+}
+
+.menu_port li {
+    margin: 0 30px;
+}
+
+.menu_port li:last-child {
+    margin-right: 0; /* Bỏ khoảng cách sau mục cuối cùng */
+}
+
+.menu_port a {
+    text-decoration: none;
+    color: pink; 
+    display: inline-block; 
+    background-color: pink; 
+    color: black; 
+    font-size: 16px; 
+    padding: 5px 10px; 
+    text-decoration: none; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    text-align: center; 
+}
+
+.menu a:hover {
+    text-decoration: none; /* Hiệu ứng khi di chuột vào */
+    background-color: #ff99cc;
+}
+
+/*Album*/
+.albums-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 60;
+}
+
+.menu_albums {
+    /* display: flex; */
+    flex-wrap: wrap;
+    display: grid; /* Sử dụng CSS Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 cột với chiều rộng bằng nhau */
+    gap: 30px; /* Khoảng cách giữa các mục */
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_albums .menu_album {
+    text-align: center;
+    margin: 20px;
+    width: 400px;
+    height: 100px;
+    /* line-height: 100px; */
+    background-color: #ff99cc;
+    border: none; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    display: flex; /* Sử dụng Flexbox để căn giữa */
+    flex-direction: column; /* Sắp xếp nội dung theo cột */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    line-height: 1.5; /* Điều chỉnh khoảng cách giữa các dòng */
+    padding: 10px; /* Thêm padding để nội dung không bị sát viền */
+    box-sizing: border-box;
+    font-size: 20px; 
+}
+
+.menu_albums .menu_album a {
+    color: black; /* Đặt màu chữ cho các liên kết là màu đen */
+    text-decoration: none; /* Bỏ gạch chân dưới liên kết */
+}
+
+/*blackpink news*/
+
+.image-container {
+    display: flex; /* Sử dụng flexbox để căn giữa */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center;
+    padding-bottom: 30px;
+
+}
+
+.image-container img {
+    max-width: 100%; /* Đảm bảo hình ảnh không vượt quá kích thước của div */
+    height: auto; /* Đảm bảo tỷ lệ khung hình không bị thay đổi */
+    border-radius: 10px;
+}
+
+.image-container .caption {
+    position: absolute; /* Đặt vị trí tuyệt đối để chú thích có thể điều chỉnh */
+    bottom: -250px; /* Đặt chú thích ở dưới cùng của hình ảnh */
+    left: 50%; /* Đặt chú thích ở giữa theo chiều ngang */
+    transform: translateX(-50%); /* Dịch chú thích sang trái 50% để căn giữa */
+    background-color: rgba(218, 212, 212, 0.7); /* Đặt màu nền cho chú thích */
+    color: rgb(245, 62, 114); /* Màu chữ */
+    padding: 5px 10px; /* Định cỡ của chú thích */
+    font-style: italic; /* Nghiêng chữ của chú thích */
+    font-size: 30px; 
+}
+
+
+/*price ticket*/
+
+.ticket-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px 60;
+}
+
+.ticket{
+    /* display: flex; */
+    flex-wrap: wrap;
+    display: grid; /* Sử dụng CSS Grid Layout */
+    grid-template-columns: repeat(3, 1fr); /* 3 cột với chiều rộng bằng nhau */
+    gap: 30px; /* Khoảng cách giữa các mục */
+    justify-content: center;
+    align-items: center;
+}
+
+.price {
+    text-align: center;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    /* line-height: 100px; */
+    background-color: #ff99cc;
+    border: none; 
+    border-radius: 10px; 
+    text-transform: uppercase;
+    display: flex; /* Sử dụng Flexbox để căn giữa */
+    flex-direction: column; /* Sắp xếp nội dung theo cột */
+    justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+    align-items: center; /* Căn giữa nội dung theo chiều ngang */
+    line-height: 1.5; /* Điều chỉnh khoảng cách giữa các dòng */
+    padding: 10px; /* Thêm padding để nội dung không bị sát viền */
+    box-sizing: border-box;
+    /* font-size: 15px;  */
+}
