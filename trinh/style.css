@@ -35,3 +35,43 @@
     color:#a2b811;
     font-weight: 400;
 }
+
+.button__btn {
+    color: white;
+    font-weight: 800;
+    padding: 16px 34px;
+    background-color: #02c9df;
+    /* list-style: none; */
+    border: none;
+    text-decoration: none;
+}
+
+.button__btn:hover {
+    background-color: #04AA6D; /* Green */
+    color: white;   
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 40px;
+}
+
+.footer-content {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-footer-nt {
+    color: black;
+    font-size: 30px;
+}
+
+.content-footer{
+
+}
+
+.footer-section {
+    margin-top: 100px;
+}
