@@ -1,87 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chây ét</title>
 </head>
+
 <body>
-    <script type = "text/javascript">
-        function giai_pt_bac_1(a, b){
-            if (a == 0){
-                if (b == 0){
-                    alert("Phương trình có vô số nghiệm");
-                } else {
-                    alert("Phương trình vô nghiệm");
-                }
-            } else {
-                alert("Phương trình có nghiệm x = " + (-b/a));
-            }
-        }
-        giai_pt_bac_1(1, 0);
+    <!-- <img id="myImg" src="img/dora.jpg" width="300" height="300" alt="dora" /> <br />
+    Model: <input type="text" id="imgText" value="Doraemon" readonly="readonly" /> <br /><br />
+    <input type="button" value="Change Image" onclick="changeImg()">
 
-        function so_chinh_phuong(a){
-            if (Math.sqrt(a) % 1 == 0){
-                alert(a + " là số chính phương");
-            } else {
-                alert(a + " không phải là số chính phương");
-            }
-        }
-        so_chinh_phuong(4);
-        so_chinh_phuong(5);
-        so_chinh_phuong(9);
+    <form id="form1" action="welcome.php">
+        First name: <input type="text" name="fname" value="John"/> <br />
+        Last name: <input type="text" name="lname" value="Smith"/> <br />
+        Age: <input type="text" name="age" value="15"/> <br />
+        Class: <input type="text" name="class" value="12B"/> <br\>
+        <input type="button" value="Controls" onclick="displayLength()">
+    </form> -->
 
-        function tinh_tong_so_chan(n){
-            var tong = 0;
-            var i = 0;
-            while (i<n){
-                if (i % 2 == 0){
-                    tong += i;
-                }
-                i++;
-            }
-            return tong;
-        }
-        var n = parseInt(prompt("Nhập số n"));
-        document.write("Tổng các số chẵn nhỏ hơn " + n + " là: " + tinh_tong_so_chan(n));
+    <h2>Tạo form tính toán cơ bản với JavaScript!!!!</h2>
+    <form action="" name="form-add">
+        <p>
+            Số a: <input type="text" name="a" id="soa" /> <br /><br>
 
-        var index = "";
-        var txt = "Cộng hòa Xã hội Chủ nghĩa Việt Nam";
-        document.write("<br>Độ dài chuỗi: " + txt.length + "<br />");
-        document.write("Mã charcode của từng ký tự: <br />");
-        for (var i = 0; i < txt.length; i++){
-            if (i==0){
-                index = txt.charCodeAt(i);
-            } else{
-                index = index + ", " + txt.charCodeAt(i);
-            }
-        }
-        document.write("Chuỗi mã charcode: " + index + "<br />");
-        var arr = index.split(",");
-        for (var i = 0; i < arr.length; i++){
-            document.write(String.fromCharCode(arr[i]));
-        }
-        document.write("<br />");
+            Số b: <input type="text" name="b" id="sob" /> <br /><br>
+            <input type="submit" name="cong" value="Cộng">
+        </p>
 
+    </form>
 
-        var chan = le = "";
-        var tongchan = tongle = 0;
-        var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-        document.write("So luong phan tu trong mang: " + data.length + "<br />");
-        for (var i = 0; i < data.length; i++){
-            if (data[i] % 2 == 0){
-                chan += data[i] + " ";
-                tongchan += data[i];
-            } else {
-                le += data[i] + " ";
-                tongle += data[i];
-            }
-        }
-        document.write("Các số chẵn trong mảng: " + chan + "<br />");
-        document.write("Tổng các số chẵn trong mảng: " + tongchan + "<br />");
-        document.write("Các số lẻ trong mảng: " + le + "<br />");
-        document.write("Tổng các số lẻ trong mảng: " + tongle + "<br />");
+    <div id="demo"></div>
 
-    </script>
+    <h1>Nhấn Open để mở file</h1>
+    <p>
+        <button type="button" onclick="window.open('bootstrap.html')">Open</button>
+    </p>
+  
+    <script src="ou.js"></script>
 </body>
+
 </html>

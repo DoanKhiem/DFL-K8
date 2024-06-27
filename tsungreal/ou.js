@@ -100,13 +100,137 @@
 //     }
 //     alert ("Dien tich hinh tron: " + circle.area());
 
-function showStyle(field){
+function showStyle(field) {
     field.style.background = "yellow";
 }
-function hideStyle(field){
+function hideStyle(field) {
     field.style.background = "white";
 }
-function setFontStyle(field){
+function setFontStyle(field) {
     field.style.fontWeight = "bold";
     field.style.fontFamily = "Arial";
 }
+
+function changeImg(){
+    var imgText = document.getElementById("myImg").alt;
+    if (imgText == "dora"){
+        document.getElementById("myImg").src = "img/meo.jpg";
+        document.getElementById("myImg").alt = "meo";
+        document.getElementById("imgText").value = "Mèo";
+    }
+    else{
+        document.getElementById("myImg").src = "img/dora.jpg";
+        document.getElementById("myImg").alt = "dora";
+        document.getElementById("imgText").value = "Doraemon";
+    }
+}
+
+function giai_pt_bac_1(a, b){
+    if (a == 0){
+        if (b == 0){
+            alert("Phương trình có vô số nghiệm");
+        } else {
+            alert("Phương trình vô nghiệm");
+        }
+    } else {
+        alert("Phương trình có nghiệm x = " + (-b/a));
+    }
+}
+//giai_pt_bac_1(1, 0);
+
+function so_chinh_phuong(a){
+    if (Math.sqrt(a) % 1 == 0){
+        alert(a + " là số chính phương");
+    } else {
+        alert(a + " không phải là số chính phương");
+    }
+}
+// so_chinh_phuong(4);
+// so_chinh_phuong(5);
+// so_chinh_phuong(9);
+
+function tinh_tong_so_chan(n){
+    var tong = 0;
+    var i = 0;
+    while (i<n){
+        if (i % 2 == 0){
+            tong += i;
+        }
+        i++;
+    }
+    return tong;
+}
+// var n = parseInt(prompt("Nhập số n"));
+// document.write("Tổng các số chẵn nhỏ hơn " + n + " là: " + tinh_tong_so_chan(n));
+
+// var index = "";
+// var txt = "Cộng hòa Xã hội Chủ nghĩa Việt Nam";
+// document.write("<br>Độ dài chuỗi: " + txt.length + "<br />");
+// document.write("Mã charcode của từng ký tự: <br />");
+// for (var i = 0; i < txt.length; i++){
+//     if (i==0){
+//         index = txt.charCodeAt(i);
+//     } else{
+//         index = index + ", " + txt.charCodeAt(i);
+//     }
+// }
+// document.write("Chuỗi mã charcode: " + index + "<br />");
+// var arr = index.split(",");
+// for (var i = 0; i < arr.length; i++){
+//     document.write(String.fromCharCode(arr[i]));
+// }
+// document.write("<br />");
+
+
+var chan = le = "";
+var tongchan = tongle = 0;
+var data = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+//document.write("So luong phan tu trong mang: " + data.length + "<br />");
+for (var i = 0; i < data.length; i++){
+    if (data[i] % 2 == 0){
+        chan += data[i] + " ";
+        tongchan += data[i];
+    } else {
+        le += data[i] + " ";
+        tongle += data[i];
+    }
+}
+// document.write("Các số chẵn trong mảng: " + chan + "<br />");
+// document.write("Tổng các số chẵn trong mảng: " + tongchan + "<br />");
+// document.write("Các số lẻ trong mảng: " + le + "<br />");
+// document.write("Tổng các số lẻ trong mảng: " + tongle + "<br />");
+
+function display_date(){
+    var today = new Date();
+    var date = today.getDate();
+    var month = today.getMonth() + 1;
+    var year = today.getFullYear();
+    alert("Hôm nay là ngày " + date + " tháng " + month + " năm " + year);
+}
+//display_date();
+
+function getArea(a){
+    var fArea = Math.PI * a * a;
+    var area = Math.floor(fArea);
+    return area;
+}
+//alert("Diện tích hình tròn có bán kính 9 là: " + getArea(9));
+
+function displayLength(){
+    var count = document.getElementById("form1").length;
+    alert("Số phần tử trong form: " + count);
+}
+
+var form = document.forms["form-add"];
+form.cong.onclick = function(){
+    var tong = 0;
+    tong = parseInt(form.a.value) + parseInt(form.b.value);
+    alert("Tổng 2 số là: " + tong);
+}
+
+var w = window.innerWidth;
+var h = window.innerHeight;
+var x = document.getElementById("demo");
+x.innerHTML = "Width: " + w + " Height: " + h;
+
+document.getElementById("demo").innerHTML = "Location: " + window.location.href;
