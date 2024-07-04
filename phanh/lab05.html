@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 05</title>
+    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <style>
+        h1 {
+            color: rgb(255, 194, 194);
+            /* background-color: rgb(47, 13, 19); */
+            background-image: linear-gradient(to right, rgb(47, 13, 19), rgb(255, 0, 87));
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: rgb(14, 12, 12);
+            background-color: rgb(252, 177, 189);
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(53, 46, 46);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1:1</h1>
+    <h2>Circle Area</h2>
+    <script>
+        function area_circle(r) {
+            var tempArea = Math.PI * r * r;
+            var area = Math.floor(tempArea);
+            return area;
+        }
+        alert("Area of circle is: " + area_circle(5));
+        document.write("Area of circle is: " + area_circle(5));
+    </script>
+
+    <h2>Time</h2>
+    <script>
+        function display_date() {
+            var today = new Date();
+            alert("today: " + today);
+            var date = today.getDate();
+            var month = today.getMonth();
+            alert("month: " + month);
+            month++;
+            var year = today.getFullYear();
+            alert("Today\'s date is: " + month + "/" + date + "/" + year);
+            document.write("Today\'s date is: " + month + "/" + date + "/" + year);
+        }
+        display_date();
+    </script>
+
+    <h2>Imagine</h2>
+    <script>
+        function change_image() {
+            var imgText = document.getElementById('myImg').alt;
+
+            if (imgText == "how_you_like_that") {
+                document.getElementById('myImg').src = "kill_this_love.jpg";
+                document.getElementById('myImg').alt = "kill_this_love";
+                document.getElementById('mytext').value = "kill_this_love song";
+                alert("if");
+            } else {
+                document.getElementById('myImg').src = "how_you_like_that.jpg";
+                document.getElementById('myImg').alt = "how_you_like_that";
+                document.getElementById('mytext').value = "how_you_like_that song";
+                alert("else");
+            }
+        }
+    </script>
+    <img id="myImg" src="how_you_like_that.jpg" width="300" height="300" alt="how_you_like_that" /><br />
+    Model: <input type="text" id="mytext" value="how_you_like_that song" readonly="readonly" /><br /><br />
+    <input type="button" value="Change Image" onclick="change_image()" />
+
+    <h2>Form</h2>
+    <script>
+        function display_length() {
+            var count = document.getElementById("form1").length;
+            alert('Number of controls on the form: ' + count);
+        }
+    </script>
+    <form id="form1" action="welcome.php">
+        First name: <input type="text" name="firstname" value="John" /><br />
+        Last name: <input type="text" name="lastname" value="Smith" /><br />
+        Age : <input type="text" name="age" value="40" /><br />
+        <input type="button" value="Controls" onClick="display_length()" />
+    </form>
+
+    <h2>RegEx 2-2</h2>
+    <script>
+        var zipcodepattern = /^\d{5}$/;
+        var zipcode = zipcodepattern.exec(prompt("Enter ZIP Code: "));
+        if (zipcode != null) {
+            alert("Valid ZIP Code.");
+            alert("Regular Expression Pattern: " + zipcodepattern.source);
+        }
+        else {
+            alert("Invalid ZIP Code – Format xxxxx.");
+        }
+    </script>
+
+    <h2>Youtube</h2>
+    <script>
+        function new_window() {
+            if (confirm('Do you want to open a new page?')) {
+                // window.open('https://www.youtube.com/@BLACKPINK', '_parent');
+                window.open('https://www.youtube.com/@BLACKPINK', '_blank');
+            }
+            else {
+                window.alert('In the Current Window');
+            }
+        }
+    </script>
+    <button onclick="new_window()">Open New Page</button>
+
+    <h2>Tạo form tinhs toóa js</h2>
+    <form action="" name = "form-add">
+        <p>
+            Số a: <input type="text" name = "so_a"/>
+            Số b: <input type="text" name = "so_b"/>
+            <input type="submit" name = "cong" value="Cộng">
+        </p>
+    </form>
+
+    <script>
+        var form = document.forms["form-add"];
+        form.cong.onclick = function() {
+            var tong = 0;
+            tong = parseInt(form.so_a.value) + parseInt(form.so_b.value);
+            alert("Tổng 2 số a va b la: " + tong);
+            // document.write("Tổng 2 số a va b la: " + tong);
+        }
+    </script>
+
+    <h2>JavaScript</h2>
+    <h3>window.location</h3>
+    <p></p>
+
+    <h1>JQuery</h1>
+    <script>
+        $(document).ready(function(){
+            $("#myButton").click(function(){
+                $("#myText").text("Hello, jQuery!");
+            });
+        });
+    </script>
+    <button id="myButton">Click me</button>
+    <p id="myText">Original text</p>
+
+
+
+</body>
+
+</html>
