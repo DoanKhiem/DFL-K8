@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Exercises</title>
+    <style>
+        h1 {
+            color: rgb(255, 194, 194);
+            /* background-color: rgb(47, 13, 19); */
+            background-image: linear-gradient(to right, rgb(47, 13, 19), rgb(255, 0, 87));
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h2 {
+            color: rgb(14, 12, 12);
+            background-color: rgb(252, 177, 189);
+            width: 200px;
+            padding: 10px;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(53, 46, 46);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>HOME WORK</h1>
+    <!-- <script src="lab04.js"></script> -->
+
+    <!-- ex1 -->
+    <h2>Bài 1</h2>
+    <script>
+        var a = prompt("Enter number: ");
+
+        function so_chinh_phuong(a) {
+            if (Math.sqrt(a) % 1 == 0) {
+                return a + " là số chính phương";
+            } else {
+                return a + " không là số chính phương";
+            }
+        }
+
+        var result = so_chinh_phuong(a);
+        alert(result);
+        document.write(result);
+    </script>
+
+    <!-- ex2 -->
+    <h2>Bài 2</h2>
+    <script>
+        var myArr = [1, 2, 3, 4, 5];
+        var n = myArr.length;
+        var sum = 0;
+        var i = 1;
+        while (i <= n) {
+            if (i % 2 === 0) {
+                sum += i;
+            }
+            i++;
+        }
+
+        document.write("Tổng số chẵn " + sum + "<br />");
+    </script>
+
+    <!-- ex3 -->
+    <h2>Bài 3</h2>
+    <script>
+        var txt = "Cộng hòa xã hội chủ nghĩa Việt Nam";
+        document.write("Độ dài của chuỗi là: " + txt.length + "<br />");
+        document.write("Mã char code của từng ký tự: <br />");
+        for (i = 0; i < txt.length; i++) {
+            document.write(txt[i] + " <> " + txt[i].charCodeAt(0) + "<br />");
+        }
+    </script>
+
+    <!-- ex4 -->
+    <h2>Bài 4</h2>
+    <script>
+        var newText = "";
+        var txt = "học lập trình web";
+        document.write("Độ dài của chuỗi là: " + txt.length + "<br />");
+        document.write("Mã char code của từng ký tự: <br />");
+        for (i = 0; i < txt.length; i++) {
+            if (i == 0) {
+                newText += txt[i].charCodeAt(0);
+            } else {
+                newText += "," + txt[i].charCodeAt(0);
+            }
+        }
+        document.write("Chuỗi Charcode: <br />" + newText + '<br />');
+        var arrText = newText.split(",");
+        for (i = 0; i < arrText.length; i++) {
+            document.write(String.fromCharCode(arrText[i]));
+        }
+    </script>
+
+    <!-- ex5 -->
+    <h2>Bài 5</h2>
+    <script>
+        var so_chan = so_le = "";
+        var tong_so_chan = tong_so_le = 0;
+        var dataArr = [4, 6, 9, 11, 34, 22, 57, 68, 90, 21, 35, 77];
+        var n = dataArr.length;
+        document.write("<br />" + "Số phần tử trong mảng: " + n + "<br />");
+
+        for (i = 0; i < n; i++) {
+            if (dataArr[i] % 2 == 0) {
+                tong_so_chan += dataArr[i];
+
+                if (so_chan.length == 0) {
+                    so_chan = dataArr[i];
+                } else {
+                    so_chan += ", " + dataArr[i];
+                }
+            } else {
+                tong_so_le += dataArr[i];
+
+                if (so_le.length == 0) {
+                    so_le = dataArr[i];
+                } else {
+                    so_le += ", " + dataArr[i];
+                }
+            }
+        }
+
+        document.write("Trong mảng có các số chẵn là: " + so_chan + "<br />");
+        document.write("Tổng các số chẵn: " + tong_so_chan + "<br />");
+        document.write("Trong mảng có các số lẻ là: " + so_le + "<br />");
+        document.write("Tổng các số lẻ: " + tong_so_le + "<br />");
+    </script>
+
+    <h2>Số nguyên tố</h2>
+    <script>
+        var n = prompt("Enter number to check isPrime: ");
+
+        function isPrime(n) {
+            if (n <= 1) {
+                return n + " không là số nguyên tố";
+            }
+            for (var i = 2; i <= Math.sqrt(n); i++) {
+                if (n % i == 0) {
+                    return n + " không là số nguyên tố";
+                }
+            }
+            return n + " là số nguyên tố";
+        }
+
+        var result = isPrime(n);
+        alert(result);
+        document.write(result);
+    </script>
+
+    <h2>Min&Max in Array</h2>
+    <script>
+        function timMinMax(arr) {
+            if (arr.length === 0) {
+                document.write("Mảng rỗng.");
+                return;
+            }
+
+            var min = arr[0];
+            var max = arr[0];
+
+            for (var i = 1; i < arr.length; i++) {
+                if (arr[i] < min) {
+                    min = arr[i];
+                }
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+
+            document.write("Số nhỏ nhất trong mảng là: " + min + "<br>");
+            document.write("Số lớn nhất trong mảng là: " + max + "<br>");
+        }
+
+        var mangSo = [5, 2, 8, 1, 9, 3];
+
+        timMinMax(mangSo);
+    </script>
+
+    <h2>Phép tính</h2>
+    <script>
+        function tinhToan(a, b, phep_tinh) {
+            if (phep_tinh === 'cong') {
+                document.write("Tổng hai số " + a + " và " + b + " là: " + (a + b));
+            } else if (phep_tinh === 'tru') {
+                document.write("Hiệu hai số " + a + " và " + b + " là: " + (a - b));
+            } else if (phep_tinh === 'nhan') {
+                document.write("Tích hai số " + a + " và " + b + " là: " + (a * b));
+            } else if (phep_tinh === 'chia') {
+                if (b !== 0) {
+                    document.write("Thương hai số " + a + " và " + b + " là: " + (a / b));
+                } else {
+                    document.write("Không thể chia cho số 0");
+                }
+            } else {
+                document.write("Phép tính không hợp lệ");
+            }
+        }
+
+        var a = 10;
+        var b = 5;
+        var phep_tinh = 'cong';
+
+        tinhToan(a, b, phep_tinh);
+    </script>
+
+</body>
+
+</html>

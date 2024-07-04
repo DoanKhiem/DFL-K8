@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=nho.0">
-    <title>ROCK</title>
+    <title>LEGO</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -30,31 +30,121 @@
         </div>
     </header>
     <div class="bt">
-        <hnho>GAME</hnho>
+        <hnho>LEGO FROM DENMARK</hnho>
     </div>
     <div class="menu1">
         <ul>
-            <li>All</li>
-            <li>Web App</li>
-            <li>UI/UX</li>
-            <li>Graphics</li>
-            <li>Mobile</li>
-            <li>Branding</li>
-            <li>Marketing</li>
+            <li><a href="bootrap.html">Bootstrap</a></li>
+            <li><a href="form.html">Form</a></li>
+            <li><a href="table.html">Table</a></li>
         </ul>
     </div>
 
     <div class="to">
-        <div class="nho">Web 1</div>
-        <div class="nho">Web 2</div>
-        <div class="nho">Web 3</div>
-        <div class="nho">Web 4</div>
-        <div class="nho">Web 5</div>
-        <div class="nho">Web 6</div>
-        <div class="nho">Web 7</div>
-        <div class="nho">Web 8</div>
-        <div class="nho">Web 9</div>
+        <div class="nho">Classic</div>
+        <div class="nho">Friend</div>
+        <div class="nho">Ninja Go</div>
+        <div class="nho">City</div>
+        <div class="nho">Jungle</div>
+        <div class="nho">Wonder land</div>
+        <div class="nho">Kingdoms</div>
+        <div class="nho">Creator</div>
+        <div class="nho">Universe</div>
     </div>
+
+    <br>
+
+    <p class="hd1">Hướng Dẫn Lắp Lego</p>
+
+
+    <div class="hd">
+        <ul style="list-style-image: url('https://kiencang.net/wp-content/uploads/2021/02/bullet-yellow.png');">
+            <li>One piece</li>
+            <li>Naruto</li>
+            <li>Marvel</li>
+            <li>One punch man</li>
+            <li>Bleach</li>
+        </ul>
+
+    </div>
+    <img src="https://file.hstatic.net/200000547241/article/giay_huong_dan_lap_lego__1__a7674719932846c985b842a4d4eae59b_1024x1024.jpg"
+        alt="">
+
+    <h2 class="h2">Lợi ích của việc chơi LEGO</h2>
+    <p>
+        <li class="loiich">Xếp hình lego phát huy óc sáng tạo, khả năng tư duy logic</li><span id="hien"></span>
+        <span id="docthem">
+            <li class="loiich">Lego giúp trẻ phát triển các kỹ năng xã hội</li>
+            <li class="loiich">Rèn luyện sự khéo léo, tăng khả năng phối hợp giữa tay và mắt</li>
+            <li class="loiich">Tiếp cận các bài học giáo dục sớm</li>
+            <li class="loiich">Kiến tạo và củng cố kỹ năng phán đoán và giải quyết vấn đề.</li>
+        </span>
+    </p>
+    <div class="more"><button onclick="myFunction()" id="nutdocthem">Đọc thêm</button></div>
+
+
+    </span>
+
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("hien");
+            var docthemText = document.getElementById("docthem");
+            var btnText = document.getElementById("nutdocthem");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "Đọc Thêm";
+                docthemText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = "Thu gọn";
+                docthemText.style.display = "inline";
+            }
+        }
+    </script>
+
+    </li>
+    </div>
+    <!-- <br>
+    <a href="form.html">FORM</a>
+<br>
+<a href="table.html">TABLE</a> -->
+    <br>
+    <img id="myImg" src="hoa.jpg" width="300" height="300" alt="xe" /><br />
+    Model: <input type="text" id="mytext" value="HOA" readonly="readonly" /><br /><br />
+    <input type="button" value="Change Image" onclick="change_image()" />
+
+    <form id="form1" action="welcome.php">
+        First name: <input type="text" name="firstname" value="John" /><br />
+        Last name: <input type="text" name="lastname" value="Smith" /><br />
+        Age : <input type="text" name="age" value="3" /><br />
+        Age : <input type="text" name="year" value="2" /><br />
+
+        <input type="button" value="Controls" onClick="display_length()" />
+    </form>
+    <h2>Tạo form java script</h2>
+    <form action="" name="form-add">
+        <p>
+            Số a: <input type="text" name="so_a">
+            Số b: <input type="text" name="so_b">
+            <input type="submit" name="cong" value="cộng">
+        </p>
+    </form>
+<h3>window.location</h3>
+<p id="demo"></p>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script type="" src="demo.js"></script>
 </body>
 
 </html>
