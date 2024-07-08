@@ -68,7 +68,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-lg-6">
+            <!-- <div class="col-lg-6">
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title">Simple table</h5>
@@ -340,8 +340,8 @@
                         </table>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-6">
+            </div> -->
+            <div class="col-12">
                 <div class="main-card mb-3 card">
                     <div class="card-body">
                         <h5 class="card-title">Table striped</h5>
@@ -349,19 +349,29 @@
                             <thead>
                                 <tr>
                                     <th>#</th>
-                                    <th>First Name</th>
-                                    <th>Last Name</th>
-                                    <th>Username</th>
+                                    <th>Name</th>
+                                    <th>Price</th>
+                                    <th>Sale</th>
+                                    <th>Created</th>
+                                    <th>Edit</th>
+                                    <!-- <th>Remove</th> -->
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>Mark</td>
-                                    <td>Otto</td>
-                                    <td>@mdo</td>
+                                <tr v-for="(item, index) in dataApi" :key="item.id">
+                                    <th scope="row">{{ index + 1 }}</th>
+                                    <td>{{ item.name }}</td>
+                                    <td>{{ item.price }}</td>
+                                    <td>{{ item.sale }}%</td>
+                                    <td>{{ new Date(item.createdAt) }}</td>
+                                    <td>
+                                        <i class="fa fa-fw" aria-hidden="true" title="Copy to use edit"></i>
+                                        <i class="fa fa-fw" aria-hidden="true" title="Copy to use trash"
+                                            @click="deleteItem(item.id)"></i>
+                                    </td>
+                                    <!-- <td><i class="fa fa-fw" aria-hidden="true" title="Copy to use trash"></i></td> -->
                                 </tr>
-                                <tr>
+                                <!-- <tr>
                                     <th scope="row">2</th>
                                     <td>Jacob</td>
                                     <td>Thornton</td>
@@ -372,7 +382,7 @@
                                     <td>Larry</td>
                                     <td>the Bird</td>
                                     <td>@twitter</td>
-                                </tr>
+                                </tr> -->
                             </tbody>
                         </table>
                     </div>
@@ -420,7 +430,54 @@
 </template>
 
 <script setup>
+import axios from 'axios';
+import { ref } from 'vue';
+const dataApi = ref([]);
+const fetchData = async () => {
+    const response = await axios.get('https://6419ba9ef398d7d95d47d12c.mockapi.io/demo/products');
+    dataApi.value = response.data;
+    console.log(response.data);
+};
 
+const deleteItem = async (id) => {
+    //   try {
+    //     const response = await axios.delete(`https://6419ba9ef398d7d95d47d12c.mockapi.io/demo/products/${id}`);
+    //     if (response.status === 200) {
+    //       dataApi.value = dataApi.value.filter(item => item.id !== id);
+    //     } else {
+    //       console.error('Error deleting item:', response);
+    //     }
+    //   } catch (error) {
+    //     console.error('Error deleting item:', error);
+    //   }
+    const response = await axios.delete(`https://6419ba9ef398d7d95d47d12c.mockapi.io/demo/products/${id}`);
+    console.log(response);
+    fetchData();
+};
+
+fetchData();
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+// .fa-edit {
+//   cursor: pointer;
+//   color: #007bff;
+// }
+
+// .fa-edit:hover {
+//   color: #0056b3;
+// }
+
+// .fa-trash {
+//   cursor: pointer;
+//   color: #dc3545;
+// }
+
+// .fa-trash:hover {
+//   color: #c82333;
+// }
+
+// .fa-trash:active {
+//   cursor: pointer; /* Con trỏ bàn tay khi ấn chuột */
+// }
+</style>
