@@ -45,7 +45,7 @@
             <ul class="vertical-nav-menu">
               <li class="app-sidebar__heading">Dashboards</li>
               <li>
-                <RouterLink to="/" class="mm-active">
+                <RouterLink :to="{ name: 'dashboard'}" class="mm-active">
                 <!-- <a href="#" class="mm-active"> -->
                   <i class="metismenu-icon pe-7s-rocket"></i>
                   Dashboard Example 1
@@ -172,7 +172,7 @@
                 </ul>
               </li>
               <li>
-                <RouterLink to="/table">
+                <RouterLink :to="{ name: 'table'}">
                 <!-- <a href="#"> -->
                   <i class="metismenu-icon pe-7s-display2"></i>
                   Tables

@@ -1,15 +1,15 @@
-import { createMemoryHistory, createRouter } from 'vue-router'
+import { createMemoryHistory, createRouter, createWebHistory } from 'vue-router'
 
 import Dashboard from './Dashboard.vue'
 import Table from './Table.vue'
 
 const routes = [
-  { path: '/', component: Dashboard },
-  { path: '/table', component: Table },
+  { path: '/', name: 'dashboard', component: Dashboard },
+  { path: '/table', name: 'table', component: Table },
 ]
 
 const router = createRouter({
-  history: createMemoryHistory(),
+  history: createWebHistory(import.meta.env.BASE_URL),
   routes,
 })
 
