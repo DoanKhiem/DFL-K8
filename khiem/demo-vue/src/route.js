@@ -6,9 +6,9 @@ import Dashboard from "./Dashboard.vue"
 import Table from "./Table.vue"
 import Form from "./Form.vue"
 const routes = [
-  { path: '/', component: Dashboard },
-  { path: '/table', component: Table },
-  { path: '/form', component: Form },
+  { path: '/', component: Dashboard, name: 'dashboard' },
+  { path: '/table', component: Table, name: 'table' },
+  { path: '/form/:id', component: Form, name: 'form' },
 ]
 
 const router = createRouter({

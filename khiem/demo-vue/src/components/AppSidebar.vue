@@ -184,7 +184,7 @@
           </li>
           <li class="app-sidebar__heading">Forms</li>
           <li>
-            <router-link to="/form">
+            <router-link to="/form/add">
               <!-- <a href="forms-controls.html"> -->
               <i class="metismenu-icon pe-7s-mouse"> </i>Forms Controls
               <!-- </a> -->
